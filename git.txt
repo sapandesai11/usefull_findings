@@ -1,0 +1,9 @@
+#git branch commands
+=============
+1) git branch	-> lists out all the branches available in the curretn repo. it marks the active branch with * and highlight it in green colour
+2) git branch <new_branch_name>	->	it creates the new branch
+3) git checkout <new_branch_name>	->	it swithes to the branch <new_branch_name>
+4) git add .	->	add the project to index
+5) git commit -m "Commit Message"	->	commit the changes made in new branch
+6) git checkout master	->	swithes to the master branch
+7) git merge <new_branch_name>	->	merge the master and <new_branch_name> branches into master branch
