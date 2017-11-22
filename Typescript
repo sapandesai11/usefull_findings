@@ -1,0 +1,3 @@
+Two ways of variable declaration
+1) var i;(globaly available in whole file)
+2) let i;(local variable)
