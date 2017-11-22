@@ -1,3 +1,7 @@
 Two ways of variable declaration
 1) var i;(globaly available in whole file)
 2) let i;(local variable)
+
+Two ways of type assertion in TS
+1) (<type>variable)
+20 (variable as type)
