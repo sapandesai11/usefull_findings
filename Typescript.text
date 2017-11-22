@@ -5,3 +5,7 @@ Two ways of variable declaration
 Two ways of type assertion in TS
 1) (<type>variable)
 20 (variable as type)
+
+Arrow Functions
+-let functionName = (parameter1, param2) => {function body}
+-one can exclude paranthases and curly braces if there ara no params and single line in Function body respectively
