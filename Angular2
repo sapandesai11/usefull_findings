@@ -31,3 +31,5 @@ Service
 It is injected using DI of angular. Every service must be inserted inside providers array of app.module.ts . 
 Angular will have only one service instance for every service irrespective of no of comps consuming it.
 It is good approach to have seperate layer for fetching data for unit testing as well as for future changes.
+
+Event Bubbling/Event Propegation
