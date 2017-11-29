@@ -1,6 +1,7 @@
 Component
 =========
-Every application has atleast one component which App or root component
+Every application has atleast one component which App or root component. 
+It should contain logic only related to presentation not related to how data is fetched to display
  It encapsulates 
   1) data
   2) HTML template
@@ -24,3 +25,9 @@ As application scales we want to breake into smaller and reusable modules.
 Template
 ========
 String Interpolation
+
+Service
+=======
+It is injected using DI of angular. Every service must be inserted inside providers array of app.module.ts . 
+Angular will have only one service instance for every service irrespective of no of comps consuming it.
+It is good approach to have seperate layer for fetching data for unit testing as well as for future changes.
