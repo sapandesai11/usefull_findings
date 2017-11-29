@@ -1,0 +1,26 @@
+Component
+=========
+Every application has atleast one component which App or root component
+ It encapsulates 
+  1) data
+  2) HTML template
+  3) Logic
+Requires 3 steps to be fully functional
+  a. create
+    -> export CompName(Pascle naming convention)
+  b. register
+    -> make an entry of CopmName in declarations array in app.module.ts file
+  c. use
+    -> user selector inside template for app component
+ Instead of writing boiler plate code for creating comp, we can use angular CLI.
+ ng g c copmname    
+ P.S loo at the naming convention
+  
+Modules
+=======
+It is group of related components. Every application has atleast one module which is called App modules.
+As application scales we want to breake into smaller and reusable modules.
+
+Template
+========
+String Interpolation
