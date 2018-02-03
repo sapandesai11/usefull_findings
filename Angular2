@@ -60,5 +60,60 @@ export class Comp{
  colspan = 1;
 }
 
+for using bootstrap first u need to install it using npm than import it in style.css e.g
+first run below cmd
+npm install --save bootstrap
+than in style.css add this sentence
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+Class Binding, Style binding 
+============================
+@Component({
+ selector:"app"
+ template:`<button [style.backgroundColor]="isActive ? 'red' : 'green'" class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)"/>`
+ 
+})
+export class Comp{
+ colspan = 1;
+ isActive = true;
+ 
+ let onSave = ($event) => {
+  console.log('Save button clikced :-', $event);
+ }
+}
+
+Event Binding
+===============
+@Component({
+ selector:"app"
+ template:`<button (click)="onSave($event)"/>`
+ 
+})
+export class Comp{
+ colspan = 1;
+ 
+ let onSave = ($event) => {
+  console.log('Save button clikced :-', $event);
+ }
+}
+
+Event Filttering
+================
+@Component({
+ selector:"app"
+ template:`<button (keyup)="onKeyup($event)"/>`
+ using event filttering
+ template:`<button (keyup.enter)="onKeyup()"/>`
+ 
+})
+export class Comp{
+ colspan = 1;
+ 
+ let onKeyUp = () => 
+  console.log('Enter was pressed :-', $event);
+ }
+}
+
 
 It is one way binding from component to html meaning any change in html will not update property in component
