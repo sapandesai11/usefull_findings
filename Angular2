@@ -33,3 +33,18 @@ Angular will have only one service instance for every service irrespective of no
 It is good approach to have seperate layer for fetching data for unit testing as well as for future changes.
 
 Event Bubbling/Event Propegation
+
+Property binding 
+================
+@Component({
+ selector:"app"
+ template:`<img src="{{ imageUrl }}"/>`
+ using property binding 
+ template:`<img [src]="imageUrl"/>`
+ 
+})
+export class Comp{
+ imageUrl = "url";
+}
+
+It is one way binding from component to html meaning any change in html will not update property in component
