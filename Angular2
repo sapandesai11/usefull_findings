@@ -47,4 +47,18 @@ export class Comp{
  imageUrl = "url";
 }
 
+Attribute Binding
+==================
+@Component({
+ selector:"app"
+ template:`<table><tr><td [colspan]="colspan"></td></tr></table>`
+ using property binding(like above) will give an error. instead use attribute binding 
+ template:`<table><tr><td [attr.colspan]="colspan"></td></tr></table>`
+ 
+})
+export class Comp{
+ colspan = 1;
+}
+
+
 It is one way binding from component to html meaning any change in html will not update property in component
