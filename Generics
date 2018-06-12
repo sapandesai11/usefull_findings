@@ -7,3 +7,12 @@ Why Generics?
   Generic Type is generic class or generic interface parameterized over type.
   Type parameter can be any non-primitive data type: any class type, any interface type, any array type, or even another type variable
   
+Naming Convention
+  Single first letter of type in upper case which is in contrast to the variable naming convention.
+  
+  E - Element
+  K - Key
+  N - Number
+  T - Type
+  V - Value
+  S,U,V  2nd, 3rd, 4th types
