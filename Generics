@@ -1,0 +1,9 @@
+Simple explaination given on the below link
+https://docs.oracle.com/javase/tutorial/java/generics/types.html
+
+
+Why Generics?
+  It adds stability to code by adding compile time type checks.
+  Generic Type is generic class or generic interface parameterized over type.
+  Type parameter can be any non-primitive data type: any class type, any interface type, any array type, or even another type variable
+  
