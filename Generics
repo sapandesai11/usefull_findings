@@ -16,3 +16,88 @@ Naming Convention
   T - Type
   V - Value
   S,U,V  2nd, 3rd, 4th types
+ 
+Type Parameter
+  It is provided at the time of declaring type class or type interface
+  
+Type Argument
+  It is provided when invoking type class (instanttiating type class)
+  
+The Diamond
+  From JAVA 7 , we can instantiate generic class without passing type argument while invoking the constructor of a generic class . e.g
+  Empty triangular brackets formely called "The Diamond"
+  Box<String> boc = new Box<>();
+
+Multiple Parameter Type
+  e.g
+    public interface Shape<K, V> {
+
+    K getShapeName();
+
+
+    V getDiamonsions();
+
+
+  }
+
+  public class Circle<K, V> implements Shape<K, V>{
+
+    private K key;
+    private V value;
+
+    public Circle(K key, V value) {
+      this.key = key;
+      this.value = value;
+    }
+
+    @Override
+    public K getShapeName() {
+      return this.key;
+    }
+
+    @Override
+    public V getDiamonsions() {
+      return this.value;
+    }
+
+  }
+
+  public class Square<K, V> implements Shape<K, V> {
+
+    private K shapeName;
+    private V diamonsions;
+
+    public Square(K shapeName, V diamonsions) {
+      this.shapeName = shapeName;
+      this.diamonsions = diamonsions;
+    }
+
+    @Override
+    public K getShapeName() {
+      return this.shapeName;
+    }
+
+    @Override
+    public V getDiamonsions() {
+      return this.diamonsions;
+    }
+
+  }
+
+  public class MainApp {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+      Circle<String, Integer> circle = new Circle<>("Circle", 50);
+      Shape<String, Integer> square = new Square<>("Square", 50);
+
+
+      System.out.println("Shape is " + circle.getShapeName() + " and it's redious is " + circle.getDiamonsions() + ".");
+      System.out.println("Shape is " + square.getShapeName() + " and it's width is " + square.getDiamonsions() + ".");
+      System.out.println(square.getClass());
+
+    }
+
+  }
