@@ -1,0 +1,26 @@
+Nested Class
+  static nested class
+  non-static nested class - inner class
+  
+Inner Class
+  it can access all the instance memebers (private , public) of enclosing class directly
+  you can access inner class's instance members using inner class instance
+  to instantiate inner class first you have to instantiate outer class and then using outer class instance u can instantite inner class
+  e.g
+  class Outer{
+  
+    class Inner{
+   
+    }
+    
+    public static void main(Strin[] args){
+      Outer o1 = new Outer();
+      Inner i1 = o1.new Inner();
+    
+    }
+  
+  }
+  As inner class is associated with instance of outer class, it can not have any static method
+  
+Static Nested Class
+  
